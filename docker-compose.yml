@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  app-legacy:
+    image: php:5.6
+    container_name: app-legacy
+    hostname: app-legacy
+    command: sh -c "/usr/local/bin/docker-entrypoint"
+    environment:
+      - APP_VERSION=legacy
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/var/www/html
+      - .docker/docker-entrypoint:/usr/local/bin/docker-entrypoint
+
+  app-v3:
+    image: php:7.2.5
+    container_name: app-v3
+    hostname: app-v3
+    command: sh -c "/usr/local/bin/docker-entrypoint"
+    environment:
+      - APP_VERSION=v3
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/var/www/html
+      - .docker/docker-entrypoint:/usr/local/bin/docker-entrypoint

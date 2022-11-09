@@ -1,0 +1,36 @@
+{
+    "name": "sbidault/composer-multi-build",
+    "description": "Spike Composer multi-build",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Sbidault\\ComposerMultiBuild\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sébastien BIDAULT",
+            "email": "sebastien.bidault@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "giggsey/libphonenumber-for-php": "^8.12",
+        "guzzlehttp/guzzle": "~7.0",
+        "monolog/monolog": "^2.8.0",
+        "php-http/httplug": "~1.1",
+        "prestashop/decimal": "^1.5",
+        "prestashop/module-lib-service-container": "^2.0",
+        "prestashop/prestashop-accounts-installer": "^1.0",
+        "ramsey/uuid": "~4.2.3",
+        "segmentio/analytics-php": "^1.8",
+        "sentry/sentry": "^1.0",
+        "symfony/cache": "^4.4",
+        "symfony/config": "^4.4",
+        "symfony/dependency-injection": "^4.4",
+        "symfony/finder": "^4.4",
+        "symfony/http-client": "^4.4",
+        "symfony/options-resolver": "^4.4",
+        "webmozart/assert": "^1.11"
+    }
+}

@@ -1,0 +1,4 @@
+.history
+/builds
+/node_modules
+**/vendor
